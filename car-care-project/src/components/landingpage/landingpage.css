@@ -1,0 +1,448 @@
+/* ///////////////////////////////////////////slider styling  */
+
+.ladingpage-slider-container-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  padding-top: 25vh;
+  width: 100%;
+  transition: transform 1.5s linear;
+  animation: up-to-bottom 1.5s linear forwards;
+}
+.ladingpage-slider-container-btn button {
+  transition: transform 1.6s linear;
+  animation: up-to-bottom 1.6s linear forwards;
+}
+.ladingpage-slider-container-btn p {
+  transition: transform 1.4s linear;
+  animation: up-to-bottom 1.4s linear forwards;
+}
+.ladingpage-slider-container-btn .fa-car {
+  transition: transform 0.4s linear;
+  animation: up-to-bottom 0.4s linear forwards;
+}
+
+@keyframes up-to-bottom {
+  0% {
+    transform: translateY(-50%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+.landingpage-icon {
+  background-color: #1e69b8;
+  border-radius: 5px 10px;
+  width: 5em;
+  height: 5em;
+}
+.landingpage-icon .fa-car {
+  font-size: 2.3rem;
+  color: white;
+  padding-top: 0.7em;
+}
+
+.carousel-item-img1 {
+  width: 100% !important;
+  height: 80vh !important;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.carousel-item-img2 {
+  width: 100% !important;
+  height: 80vh !important;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.carousel-item-img3 {
+  width: 100% !important;
+  height: 80vh !important;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.image-layer-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(23, 32, 45, 0.7);
+  z-index: 2;
+}
+
+.ladingpage-slider-container-btn p {
+  font-size: 4rem;
+  position: relative;
+  z-index: 99;
+  color: rgb(211, 209, 209);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  box-sizing: border-box;
+}
+.ladingpage-slider-container-btn button {
+  box-sizing: border-box;
+  text-decoration: none;
+  border: solid white 1px;
+  padding: 1rem 4rem;
+  font-size: 1.2rem !important;
+  cursor: pointer;
+  background: none;
+  color: white;
+  font-size: 14px;
+  transition: 500ms;
+}
+.ladingpage-slider-container-btn button:hover {
+  transition: 0.3s;
+  background-color: #1e69b8;
+  border: #1e69b8 1px solid;
+}
+/*//////////////////////////////////////////////// explore styling  */
+.landingpage-explore {
+  background-color: #fafbfc;
+  padding: 2em;
+}
+.landingpage-explore h3 {
+  text-align: center;
+  color: black;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  border-bottom: solid #1e69b8;
+  width: 40%;
+  align-items: center;
+  margin: 2em auto;
+  padding-bottom: 0.5em;
+}
+.landingpage-explore p {
+  font-size: 1.4rem;
+  text-align-last: center;
+  font-weight: 300;
+  width: 60%;
+  align-items: center;
+  margin: 2em auto;
+  padding-bottom: 0.5em;
+}
+.landingpage-explore-services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+.landingpage-explore .landingpage-services-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+.landingpage-explore .landingpage-services-btn button {
+  border: none;
+  padding: 1.5em 2em;
+  background-color: #1e69b8;
+  color: white;
+  cursor: pointer;
+}
+.landingpage-explore .landingpage-services-btn button:hover {
+  background-color: #003e81;
+  transition: 0.4s;
+}
+/* //////////////////////////////////////////card styling  */
+.about-services-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5em;
+}
+.about-services-cards .landingpage-card-icon {
+  border: solid 1px #1e69b8;
+  border-radius: 50%;
+  width: 7em;
+  height: 7em;
+}
+.about-services-cards .landingpage-card-icon .landingpage-card-icon-font {
+  font-size: 3.5rem;
+  color: #1e69b8;
+  padding: 0.3em 0.5em;
+}
+.about-services-cards .landingpage-card-description {
+  font-size: 1.2rem;
+  font-weight: 300;
+  width: 70%;
+}
+
+/* ///////////////////////////////////////////////////about styling  */
+.landingpage-about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 2em;
+  background-color: #fafbfc;
+  padding: 2em;
+}
+.landingpage-about-img {
+  flex: 40%;
+}
+.landingpage-about-img img {
+  width: 100%;
+}
+.landingpage-about-text {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 3em;
+  text-align: center;
+  margin-top: 5em;
+}
+.landingpage-about-text h3 {
+  font-weight: bold;
+  color: #0aa5cd;
+}
+.landingpage-about-text p {
+  padding: 1em 3em;
+}
+/*///////////////////////////////////////////// our offers */
+.landingpage-ouroffers {
+  background-color: #fafbfc;
+  margin: 2em auto;
+  padding: 1em;
+}
+.landingpage-ouroffers h3 {
+  text-align: center;
+  color: black;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  border-bottom: solid #1e69b8;
+  width: 40%;
+  align-items: center;
+  margin: 2em auto;
+  padding-bottom: 0.5em;
+}
+.landingpage-ouroffers-listing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+.landingpage-ouroffers-card {
+  display: grid;
+  grid-template-columns: 200px;
+  grid-template-rows: 200px 150px;
+  grid-template-areas: "price" "text" "btn";
+  text-align: center;
+  justify-content: center;
+  background-color: white;
+  color: #1e69b8;
+  border: 1px solid #1e69b8;
+  width: 80%;
+}
+.landingpage-ouroffers-card .ouroffer-card-price {
+  grid-area: price;
+  font-size: 2.3rem;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.landingpage-ouroffers-card .ouroffer-card-text {
+  grid-area: text;
+}
+.landingpage-ouroffers-card .ouroffer-card-btn {
+  grid-area: btn;
+  padding-bottom: 1em;
+}
+.landingpage-ouroffers-card .ouroffer-card-btn button {
+  padding: 1em 3em;
+  background: none;
+  border: #1e69b8 1px solid;
+  border-radius: 20px;
+  color: #1e69b8;
+  cursor: pointer;
+}
+.landingpage-ouroffers-card .ouroffer-card-btn button:hover {
+  transition: 0.3s;
+  background-color: #1e69b8;
+  color: white;
+  border: #1e69b8 1px solid;
+}
+/*/////////////////////////////////////////// testimonials styling */
+.testimonials {
+  padding: 1em 0;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.testimonials-item img {
+  width: 9.375em;
+  height: 9.375em;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 10px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.15);
+  z-index: 99;
+}
+.testimonials-info {
+  background-color: #fff;
+  padding: 5.5rem 2rem 2rem 2rem;
+  margin-top: -7em;
+  box-shadow: rgba(0, 0, 0, 0.15);
+}
+.testimonials-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em;
+}
+.testimonials-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.testimonials-info p {
+  color: #7c8595;
+  font-style: italic;
+  line-height: 1.5rem;
+  text-align: center;
+}
+.testimonials-info h6 {
+  color: black;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.testimonoals-rating {
+  text-align: center;
+  color: #fdcc28;
+}
+.landingpage-Testimonials {
+  background-color: #fafbfc;
+  padding-top: 2em;
+}
+.landingpage-Testimonials-cards {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  margin: 2em;
+}
+.landingpage-Testimonials h3 {
+  text-align: center;
+  color: black;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  border-bottom: solid #1e69b8;
+  width: 40%;
+  align-items: center;
+  margin: 2em auto;
+  padding-bottom: 0.5em;
+}
+@media screen and (max-width: 768px) {
+  .cars-cards .card {
+    width: 12em !important  ;
+  }
+  .landingpage-about {
+    display: flex;
+    flex-direction: column;
+  }
+  .landingpage-ouroffers-card {
+    grid-template-columns: 150px;
+  }
+  .landingpage-ouroffers-card .ouroffer-card-price {
+    font-size: 2rem;
+  }
+  .landingpage-ouroffers-card .ouroffer-card-btn button {
+    padding: 1em;
+  }
+}
+@media screen and (max-width: 540px) {
+  .landingpage-explore-cars {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .card {
+    width: 20em !important;
+  }
+  .landingpage-ouroffers-listing {
+    flex-direction: column;
+  }
+  .landingpage-ouroffers-card {
+    width: 70%;
+    margin: 1em auto;
+  }
+
+  .landingpage-Testimonials-cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .landingpage-about-text p {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 426px) {
+  .landingpage-explore-cars {
+    display: flex;
+    flex-direction: column;
+  }
+  .landingpage-explore h3 {
+    width: 100%;
+  }
+  .landingpage-about-text {
+    padding-left: 0em;
+  }
+
+  .card {
+    margin-bottom: 1em;
+    width: 20em !important  ;
+  }
+  .landingpage-Testimonials-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ladingpage-slider-container-btn p {
+    font-size: 2rem;
+  }
+  .ladingpage-slider-container-btn button {
+    padding: 0.7rem 4rem;
+  }
+  .aboutus-about-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutus-about-section .aboutus-img img {
+    width: 20em;
+  }
+  .aboutus-about-section .aboutus-text {
+    width: 80%;
+  }
+  .aboutus-about-section .aboutus-text h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 376px) {
+  .cars-cards .card {
+    width: 18em !important  ;
+    margin: auto;
+  }
+  .landingpage-explore-services {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+}
+@media screen and (max-width: 280px) {
+  .cars-cards .card {
+    width: 15em !important  ;
+    margin: auto;
+  }
+}
